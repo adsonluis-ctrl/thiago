@@ -362,6 +362,15 @@ footer{border-top:1px solid var(--line);padding-block:72px 40px}
 
 @media (min-width:1025px){.chip{right:max(28px,calc((100vw - 1240px)/2))}}
 @media (max-width:1024px){.gg{gap:20px;padding:32px 22px}.gq{min-height:0}.gs b{font-size:3.4rem}.gq p{font-size:1.3rem}.gg .btn,.ig .btn{width:100%}}
+#cret{display:grid;grid-template-columns:220px minmax(0,1fr);grid-template-areas:"v t" "v p";column-gap:28px;align-content:start;align-items:start}
+#cret h3{grid-area:t;align-self:end}
+#cret>p{grid-area:p}
+#cret .cv2{grid-area:v;margin:0;width:100%}
+#cret[hidden]{display:none}
+@media (min-width:1025px){.ba>.rv:last-child{padding-top:50px}}
+@media (max-width:1024px){#cret{grid-template-columns:130px minmax(0,1fr);column-gap:18px;text-align:left}#cret h3{font-size:1.15rem}#cret>p{font-size:.92rem}
+  .cps{flex-wrap:nowrap;gap:6px}.cp{padding:.6em .85em;font-size:.78rem;white-space:nowrap}
+  .cmp{aspect-ratio:4/5}}
 /* tablet e celular: tudo centralizado */
 @media (max-width:1024px){
   body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
